@@ -1,0 +1,38 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+count_temp0                                                                       0x0160       2
+count_temp1                                                                       0x0162       2
+MA_7SEG                                                                           0x0164      10
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+T_delay                                                                           R4,R5        2
+T_Timer1                                                                          R6,R7        2
+T_shift_delay                                                                     R8,R9        2
+Status                                                                            R11          1
+Mode                                                                              R10          1
+count                                                                             R13          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+EEPROM_Write                                                                      0x0004F     15
+EEPROM_Read                                                                       0x0005E     11
+timer1_ovf_isr                                                                    0x00069     53
+ext_int0_isr                                                                      0x0009E     25
+timer0_ovf_isr                                                                    0x000B7     14
+main                                                                              0x000C5     35
+INT0_INIT                                                                         0x000E8      8
+Timer_INIT                                                                        0x000F0     20
+GPIO_INIT                                                                         0x00104     13
+Wait_Shift                                                                        0x00111     12
+Delay_200us                                                                       0x0011D     19
+CheckSW                                                                           0x00130     75
+Display                                                                           0x0017B     46
+Power_Check                                                                       0x001A9     45
